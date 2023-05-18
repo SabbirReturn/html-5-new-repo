@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        .swimming-1{
+            position: relative;
+            /* border: 1px solid palevioletred;
+            width: 200px; */
+            top: 130px; 
+        }
+        .swimming-2{
+            position: relative;
+            /* border: 1px solid palevioletred;
+            width: 200px; */
+            top: 40px;
+        }
+        .swimming-3{
+            position: relative;
+            /* border: 1px solid palevioletred;
+            width: 200px; */
+            top: -100px;
+        }
+        #boy{
+            position: relative;
+            z-index: 3;
+            left: 100px;
+            width: 200px;
+        }
+        #ring{
+            position: relative;
+            z-index: 2;
+            left: 100px;
+            width: 230px;
+        }
+        #water{
+            position: relative;
+            z-index: 1;
+            left: 100px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Now I am learning pseudo-position</h1>
+    <section class="swimming">
+        <div class="swimming-1">
+            <img id="boy" src="image/boy.svg" alt="">
+        </div>
+        <div class="swimming-2">
+            <img id="ring" src="image/ring.svg" alt="">
+        </div>
+        <div class="swimming-3">
+            <img id="water" src="image/water.svg" alt="">
+        </div>
+    </section>
+</body>
+</html>
