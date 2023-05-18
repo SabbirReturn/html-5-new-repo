@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo</title>
+    <style>
+        .topic:hover{
+            background-color: blueviolet;
+            color: aqua;
+            width: 20%;
+        }
+        .ans:focus{
+            color: blue;
+            font-size: 20px;
+            font-weight: 700;
+            background-color: aqua;
+        }
+        .header::after{
+            content: '?';
+        }
+        .header::before{
+            content: 'How ';
+        }
+        .header:first-child:hover{
+            color: blueviolet;
+        }
+        .header:nth-child(2n+1){
+            color: red;
+        }
+        div a:visited{
+            color: brown;
+            background-color:chartreuse ;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="topic">Hey, how are you?</h1>
+    <textarea class="ans" name="" id="" cols="30" rows="5"></textarea>
+    <div>
+        <h3 class="header">are you</h3>
+        <h3 class="header">are you</h3>
+        <h3 class="header">are you</h3>
+        <h3 class="header">are you</h3>
+        <h3 class="header">are you</h3>
+    </div>
+    <div>
+        <a href="https://www.google.com/">Google</a>
+        <a href="https://www.facebook.com/">Facebook</a>
+        <a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwiHs9bdx_3-AhXBIysKHRxcAaAYABADGgJzZg&ohost=www.google.com&cid=CAESaeD25ZDex5gAew01tai5S92XmfLhPoit1LgPC1z7jIPboq-c00orisG2TtYb30NI4OG0TU2c7Tlcea81swviD4GR5955j0bX87pdSjwZos1IiACJaKeyjMTuF9mXUgvOzUUKgZBQo560xA&sig=AOD64_1oOI2wk02zkB6tImOgcd7u3eP2TA&q&adurl&ved=2ahUKEwicytDdx_3-AhUp-jgGHV7VD58Q0Qx6BAgHEAE">IIII</a>
+    </div>
+</body>
+</html>

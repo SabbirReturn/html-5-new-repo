@@ -6,15 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pseudo</title>
     <style>
-        .section{
-            height: 100px;
-        }
+    
         .cv:hover{
             background-color: aquamarine;
         }
         .problem:focus{
             color: deepskyblue;
             font-size: 25px;
+        }
+        .li::before{
+            content: 'How ';
+        }
+        .li::after{
+            content: '?';
+        }
+        li:first-child{
+            color: red;
         }
     </style>
 </head>
@@ -23,6 +30,23 @@
         <button class="cv">Click hear and check my cv</button><br><br>
     <textarea class="problem" name="" id="" cols="30" rows="7" placeholder="Drop your objection"></textarea>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam earum laudantium sunt vel officia dicta maxime nobis doloremque voluptatem. Similique doloremque sequi, molestias officiis ut eveniet mollitia qui voluptates nostrum consequatur possimus minima repellat distinctio. Tempora eaque, quisquam a nemo aliquam eum! Aut quisquam nobis recusandae accusantium cupiditate possimus asperiores.</p>
+    </div>
+    <div>
+        <ul class="li">
+            <li>are you</li>
+            <li>are you</li>
+            <li>are you</li>
+            <li>are you</li>
+        </ul>
+    </div>
+    <div>
+        <ul>
+            <li>Sabbir</li>
+            <li>Hasan</li>
+            <li>Robin</li>
+            <li>Misu</li>
+            <li>Tushi</li>
+        </ul>
     </div>
 </body>
 </html>
